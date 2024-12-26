@@ -1,0 +1,4 @@
+although The amount of textual data is massive, and the problem with textual data is that it needs to be represented in a format that can be mathematically used in solving some problem.
+In simple words, we need to get an integer representation of a word. There are simple to complex ways to solve this problem. 
+Since computers cannot understand the text, we convert the words into number representations. The same with the ML algos too, we need to give some data in the form of numbers in order to feed for processing although
+Because
