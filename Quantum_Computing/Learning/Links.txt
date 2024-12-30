@@ -1,0 +1,158 @@
+pycm v0.8.1 - asciinema
+https://asciinema.org/a/171863
+
+ELI5: Normalization dataset while training model in Machine Learning. : explainlikeimfive
+https://www.reddit.com/r/explainlikeimfive/comments/8hgji9/eli5_normalization_dataset_while_training_model/
+
+ELI5: How does machine learning learn and create images? : explainlikeimfive
+https://www.reddit.com/r/explainlikeimfive/comments/cvp74h/eli5_how_does_machine_learning_learn_and_create/
+
+ELI5: Quantum Computing : explainlikeimfive
+https://www.reddit.com/r/explainlikeimfive/comments/1quky2/eli5_quantum_computing/
+
+ELI5: Why are some people afraid of A.I. if there are already any kind of Machine Learning Algorithms? : explainlikeimfive
+https://www.reddit.com/r/explainlikeimfive/comments/4723hy/eli5_why_are_some_people_afraid_of_ai_if_there/
+
+ELI5: how does machine learning work? : explainlikeimfive
+https://www.reddit.com/r/explainlikeimfive/comments/6vkue2/eli5_how_does_machine_learning_work/
+
+ELI5: With deepfake voices now sounding almost indistinguishable from human voices, why do computer voices (TTS, Google Maps, etc) still sound like garbage? : explainlikeimfive
+https://www.reddit.com/r/explainlikeimfive/comments/dvl88i/eli5_with_deepfake_voices_now_sounding_almost/
+
+quantum_machine_learning_LIVE/Demo.ipynb at master · llSourcell/quantum_machine_learning_LIVE
+https://github.com/llSourcell/quantum_machine_learning_LIVE/blob/master/Demo.ipynb
+
+Quantum-Machine-Learning/00_Course_Introduction.ipynb at master · vishwesh5/Quantum-Machine-Learning
+https://github.com/vishwesh5/Quantum-Machine-Learning/blob/master/qiskit_version/00_Course_Introduction.ipynb
+
+sonamghosh/quantum-machine-learning: This repo is to contain material from the University of Toronto Quantum Machine Learning Course by Prof. Peter Wittek on edX
+https://github.com/sonamghosh/quantum-machine-learning
+
+quantum-learning/StateLearning.ipynb at master · XanaduAI/quantum-learning
+https://github.com/XanaduAI/quantum-learning/blob/master/notebooks/StateLearning.ipynb
+
+artix41/awesome-quantum-ml: Curated list of awesome papers and resources in quantum machine learning
+https://github.com/artix41/awesome-quantum-ml
+
+Ranlot/edX---Quantum-Machine-Learning: edX course on "Quantum Machine Learning"
+https://github.com/Ranlot/edX---Quantum-Machine-Learning
+
+liyaochong/quantum-algorithm-learning-and-implementation: A group of quantum machine learning algorithm are implemented with the Qiskit
+https://github.com/liyaochong/quantum-algorithm-learning-and-implementation
+
+abignu/QuantumMachineLearning: MOOC of the University of Toronto on Quantum Machine Learning. This repository includes all the Coding Assignments done by Agustin Bignu with Qiskit. The grade point average was 96%.
+https://github.com/abignu/QuantumMachineLearning
+
+Quantum-Machine-Learning-/QML.ipynb at master · jaisimhamanipatruni/Quantum-Machine-Learning-
+https://github.com/jaisimhamanipatruni/Quantum-Machine-Learning-/blob/master/QML.ipynb
+
+feliux/quantum_machine_learning: Notebooks from University of Toronto's Quantum ML MOOC
+https://github.com/feliux/quantum_machine_learning
+
+Shesh6/Quantum-Machine-Learning: A Quantum Computing MOOC from University of Toronto focusing on Machine Learning applications, taken in summer 2019. Coded in Python using IBM's qiskit library and D-Wave's ocean library.
+https://github.com/Shesh6/Quantum-Machine-Learning
+
+soumyadip1995/Quantum-Machine-Learning
+https://github.com/soumyadip1995/Quantum-Machine-Learning
+
+Quantum-Machine-Learning-Group/Quantum_Advanatage_Assignment2.ipynb at master · LaraSch/Quantum-Machine-Learning-Group
+https://github.com/LaraSch/Quantum-Machine-Learning-Group/blob/master/Quantum_Advanatage_Assignment2.ipynb
+
+q4quanta/Q-mlearning: Quantum Machine Learning EDX
+https://github.com/q4quanta/Q-mlearning
+
+Jupyter Notebook Viewer
+https://nbviewer.jupyter.org/github/q4quanta/Q-mlearning/blob/master/00_Introduction_to_Qiskit.ipynb
+
+krishnakumarsekar/awesome-quantum-machine-learning: Here you can get all the Quantum Machine learning Basics, Algorithms ,Study Materials ,Projects and the descriptions of the projects around the web
+https://github.com/krishnakumarsekar/awesome-quantum-machine-learning#introduction
+
+(22) Einstein's brilliant mistake: Entangled states - Chad Orzel - YouTube
+https://www.youtube.com/watch?v=DbbWx2COU0E
+
+Schrödinger's cat: A thought experiment in quantum mechanics - Chad Orzel - YouTube
+https://www.youtube.com/watch?v=UjaAxUO6-Uw&list=PLJicmE8fK0EiHGFX3EhFwe1bwCq30jKYl
+
+What is the Heisenberg Uncertainty Principle? - Chad Orzel - YouTube
+https://www.youtube.com/watch?v=TQKELOE9eY4
+
+What is the Heisenberg Uncertainty Principle? - Chad Orzel - YouTube
+https://www.youtube.com/watch?v=TQKELOE9eY4
+
+Schrödinger's cat: A thought experiment in quantum mechanics - Chad Orzel - YouTube
+https://www.youtube.com/watch?v=UjaAxUO6-Uw
+
+Heisenberg’s Uncertainty Principle - Google Search
+https://www.google.com/search?q=Heisenberg%E2%80%99s+Uncertainty+Principle&rlz=1C5CHFA_enUS866IN866&oq=Heisenberg%E2%80%99s+Uncertainty+Principle&aqs=chrome..69i57&sourceid=chrome&ie=UTF-8
+
+Explainer: what is quantum machine learning and how can it help us?
+http://theconversation.com/explainer-what-is-quantum-machine-learning-and-how-can-it-help-us-114627
+
+Quantum Machine Learning 1.0 - XanaduAI - Medium
+https://medium.com/xanaduai/quantum-machine-learning-1-0-76a525c8cf69
+
+How can quantum computing be useful for Machine Learning
+https://www.kdnuggets.com/2019/04/quantum-computing-machine-learning.html
+
+What is quantum in simple language? - YouTube
+https://www.youtube.com/watch?v=M6_atugBTrU
+
+How Does a Quantum Computer Work? - YouTube
+https://www.youtube.com/watch?v=g_IaVepNDT4
+
+Quantum Entanglement & Spooky Action at a Distance - YouTube
+https://www.youtube.com/watch?v=ZuvK-od647c
+
+(1) The definition of quantum theory - Part I - YouTube
+https://www.youtube.com/watch?v=qG05BRldBmM
+
+(1) The definition of quantum theory - Part II - YouTube
+https://www.youtube.com/watch?v=T_BKWPmvymY
+
+pinterest-kdd16.pdf
+https://cs.stanford.edu/people/jure/pubs/pinterest-kdd16.pdf
+
+To what extent can quantum computers help to develop Artificial Intelligence? - Artificial Intelligence Stack Exchange
+https://ai.stackexchange.com/questions/36/to-what-extent-can-quantum-computers-help-to-develop-artificial-intelligence/15869#15869
+
+comparison - What is the difference between classical and quantum machine learning? - Artificial Intelligence Stack Exchange
+https://ai.stackexchange.com/questions/14112/what-is-the-difference-between-classical-and-quantum-machine-learning
+
+algorithm - Introductory material for quantum machine learning - Quantum Computing Stack Exchange
+https://quantumcomputing.stackexchange.com/questions/2151/introductory-material-for-quantum-machine-learning
+
+1409.3097.pdf
+https://arxiv.org/pdf/1409.3097.pdf
+
+[1408.7005] The quest for a Quantum Neural Network
+https://arxiv.org/abs/1408.7005
+
+Quantum-Machine-Learning-What-Quantum-Computing-Means-to-Data-Mining.pdf
+https://www.researchgate.net/profile/Peter_Wittek/publication/264825604_Quantum_Machine_Learning_What_Quantum_Computing_Means_to_Data_Mining/links/5ababcfba6fdcc71647085db/Quantum-Machine-Learning-What-Quantum-Computing-Means-to-Data-Mining.pdf
+
+Quantum Machine Learning 1.0 - XanaduAI - Medium
+https://medium.com/xanaduai/quantum-machine-learning-1-0-76a525c8cf69
+
+Free Text to Speech Online with Natural Voices
+https://www.naturalreaders.com/online/
+
+The Complete Guide to Remembering What You Read - Better Humans - Medium
+https://medium.com/better-humans/the-complete-guide-to-remembering-what-you-read-1ffb74b4e04a
+
+Highlighting Quantum Computing for Machine Learning
+https://medium.com/meetech/highlighting-quantum-computing-for-machine-learning-1f1abd41cb59
+
+Finally, Proof That Quantum Computing Can Boost Machine Learning
+https://singularityhub.com/2019/03/17/finally-proof-that-quantum-computing-can-boost-machine-learning/
+
+You searched for quantum machine learning – Physics World
+https://physicsworld.com/?s=quantum+machine+learning
+
+Is quantum tech an industry or a community? – Physics World
+https://physicsworld.com/a/is-quantum-tech-an-industry-or-a-community/
+
+Quantum_Machine_Learning_What_Quantum_Computing_Me.pdf
+file:///Users/mowlanicab/Desktop/Data%20Science/Learning/Quantum%20Machine%20Learning/Quantum_Machine_Learning_What_Quantum_Computing_Me.pdf
+
+(49) Lunch & Learn: Quantum Computing - YouTube
+https://www.youtube.com/watch?v=7susESgnDv8&feature=youtu.be
