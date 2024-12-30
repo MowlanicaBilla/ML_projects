@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<!-- saved from url=(0105)https://cacm.acm.org/magazines/2019/8/238339-the-algorithm-that-changed-quantum-machine-learning/fulltext -->
+<html xmlns:fb="http://ogp.me/ns/fb#" class="newie js borderradius csstransitions gr__cacm_acm_org" lang="en"><!--[if lt IE 7]><html class="no-js ie6 oldie" lang="en"><![endif]--><!--[if IE 7]><html class="no-js ie7 oldie" lang="en"><![endif]--><!--[if IE 8]><html class="no-js ie8 oldie" lang="en"><![endif]--><!--[if gt IE 8]><!--><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script src="./The Algorithm That Changed Quantum Machine Learning _ August 2019 _ Communications of the ACM_files/cb=gapi.loaded_0" async=""></script><script type="text/javascript" async="" src="./The Algorithm That Changed Quantum Machine Learning _ August 2019 _ Communications of the ACM_files/analytics.js"></script><script type="text/javascript" async="" src="./The Algorithm That Changed Quantum Machine Learning _ August 2019 _ Communications of the ACM_files/plusone.js" gapi_processed="true"></script><script type="text/javascript" src="./The Algorithm That Changed Quantum Machine Learning _ August 2019 _ Communications of the ACM_files/1.txt"></script><script type="text/javascript" src="./The Algorithm That Changed Quantum Machine Learning _ August 2019 _ Communications of the ACM_files/1(1).txt"></script><script async="" src="./The Algorithm That Changed Quantum Machine Learning _ August 2019 _ Communications of the ACM_files/st.js"></script><script type="text/javascript" src="./The Algorithm That Changed Quantum Machine Learning _ August 2019 _ Communications of the ACM_files/moatframe.js"></script>
+
+
+<!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><![endif]-->
+<!--[if lt IE 7]><html class="no-js ie6 oldie" lang="en"><![endif]-->
+<!--[if IE 7]><html class="no-js ie7 oldie" lang="en"><![endif]-->
+<!--[if IE 8]><html class="no-js ie8 oldie" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--><!--<![endif]-->
+<title>The Algorithm That Changed Quantum Machine Learning | August 2019 | Communications of the ACM</title>
+<meta name="title" content="The Algorithm That Changed Quantum Machine Learning">
+<meta name="author" content="Samuel Greengard">
+<meta name="date" content="2019-8-1">
+<meta name="year" content="2019">
+<meta name="subjects" content="artificial intelligence,computer systems,entertainment,hardware,performance and reliability">
+<meta name="sections" content="News">
+<link rel="alternate" type="application/rss+xml" href="https://cacm.acm.org/magazine.rss" title="Communications of the ACM: Current Issue [RSS 2.0]">
+<link rel="canonical" href="https://cacm.acm.org/magazines/2019/8/238339-the-algorithm-that-changed-quantum-machine-learning/fulltext">
+<link href="./The Algorithm That Changed Quantum Machine Learning _ August 2019 _ Communications of the ACM_files/all.css" rel="stylesheet">
+<script src="./The Algorithm That Changed Quantum Machine Learning _ August 2019 _ Communications of the ACM_files/jquery.min.js"></script>
+
+<link href="./The Algorithm That Changed Quantum Machine Learning _ August 2019 _ Communications of the ACM_files/jplayer.pink.flag.css" rel="stylesheet">
+<link href="./The Algorithm That Changed Quantum Machine Learning _ August 2019 _ Communications of the ACM_files/videos.css" rel="stylesheet">
+<link href="./The Algorithm That Changed Quantum Machine Learning _ August 2019 _ Communications of the ACM_files/tipsy.css" rel="stylesheet">
+<link href="./The Algorithm That Changed Quantum Machine Learning _ August 2019 _ Communications of the ACM_files/colorbox.css" rel="stylesheet">
+<script type="text/javascript" src="./The Algorithm That Changed Quantum Machine Learning _ August 2019 _ Communications of the ACM_files/cookie.js"></script>
+<script src="./The Algorithm That Changed Quantum Machine Learning _ August 2019 _ Communications of the ACM_files/modernizr.js"></script>
+<style>
+      html{overflow: auto !important;}
+    </style>
+<meta property="og:type" content="article"><meta property="og:url" content="https://cacm.acm.org/magazines/2019/8/238339-the-algorithm-that-changed-quantum-machine-learning/fulltext"><meta property="og:title" content="The Algorithm That Changed Quantum Machine Learning"><meta property="og:image" content="https://cacm.acm.org/system/assets/0003/5194/071919_IBM_The-Algorithm1.large.jpg?1563826383&amp;1563826383"><meta property="og:description" content="A college student discovered a classical computing algorithm that experts overlooked. It promises to change both classical and quantum machine learning.
+">
+<script type="text/javascript" src="./The Algorithm That Changed Quantum Machine Learning _ August 2019 _ Communications of the ACM_files/addthis_widget.js"></script><div id="_atssh" style="visibility: hidden; height: 1px; width: 1px; position: absolute; top: -9999px; z-index: 100000;"><iframe id="_atssh259" title="AddThis utility frame" style="height: 1px; width: 1px; position: absolute; top: 0px; z-index: 100000; border: 0px; left: 0px;" src="./The Algorithm That Changed Quantum Machine Learning _ August 2019 _ Communications of the ACM_files/sh.f48a1a04fe8dbf021b4cda1d.html"></iframe></div><style type="text/css">.at-icon{fill:#fff;border:0}.at-icon-wrapper{display:inline-block;overflow:hidden}a .at-icon-wrapper{cursor:pointer}.at-rounded,.at-rounded-element .at-icon-wrapper{border-radius:12%}.at-circular,.at-circular-element .at-icon-wrapper{border-radius:50%}.addthis_32x32_style .at-icon{width:2pc;height:2pc}.addthis_24x24_style .at-icon{width:24px;height:24px}.addthis_20x20_style .at-icon{width:20px;height:20px}.addthis_16x16_style .at-icon{width:1pc;height:1pc}#at16lb{display:none;position:absolute;top:0;left:0;width:100%;height:100%;z-index:1001;background-color:#000;opacity:.001}#at_complete,#at_error,#at_share,#at_success{position:static!important}.at15dn{display:none}#at15s,#at16p,#at16p form input,#at16p label,#at16p textarea,#at_share .at_item{font-family:arial,helvetica,tahoma,verdana,sans-serif!important;font-size:9pt!important;outline-style:none;outline-width:0;line-height:1em}* html #at15s.mmborder{position:absolute!important}#at15s.mmborder{position:fixed!important;width:250px!important}#at15s{background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAABtJREFUeNpiZGBgaGAgAjAxEAlGFVJHIUCAAQDcngCUgqGMqwAAAABJRU5ErkJggg==);float:none;line-height:1em;margin:0;overflow:visible;padding:5px;text-align:left;position:absolute}#at15s a,#at15s span{outline:0;direction:ltr;text-transform:none}#at15s .at-label{margin-left:5px}#at15s .at-icon-wrapper{width:1pc;height:1pc;vertical-align:middle}#at15s .at-icon{width:1pc;height:1pc}.at4-icon{display:inline-block;background-repeat:no-repeat;background-position:top left;margin:0;overflow:hidden;cursor:pointer}.addthis_16x16_style .at4-icon,.addthis_default_style .at4-icon,.at4-icon,.at-16x16{width:1pc;height:1pc;line-height:1pc;background-size:1pc!important}.addthis_32x32_style .at4-icon,.at-32x32{width:2pc;height:2pc;line-height:2pc;background-size:2pc!important}.addthis_24x24_style .at4-icon,.at-24x24{width:24px;height:24px;line-height:24px;background-size:24px!important}.addthis_20x20_style .at4-icon,.at-20x20{width:20px;height:20px;line-height:20px;background-size:20px!important}.at4-icon.circular,.circular .at4-icon,.circular.aticon{border-radius:50%}.at4-icon.rounded,.rounded .at4-icon{border-radius:4px}.at4-icon-left{float:left}#at15s .at4-icon{text-indent:20px;padding:0;overflow:visible;white-space:nowrap;background-size:1pc;width:1pc;height:1pc;background-position:top left;display:inline-block;line-height:1pc}.addthis_vertical_style .at4-icon,.at4-follow-container .at4-icon{margin-right:5px}html>body #at15s{width:250px!important}#at15s.atm{background:none!important;padding:0!important;width:10pc!important}#at15s_inner{background:#fff;border:1px solid #fff;margin:0}#at15s_head{position:relative;background:#f2f2f2;padding:4px;cursor:default;border-bottom:1px solid #e5e5e5}.at15s_head_success{background:#cafd99!important;border-bottom:1px solid #a9d582!important}.at15s_head_success a,.at15s_head_success span{color:#000!important;text-decoration:none}#at15s_brand,#at15sptx,#at16_brand{position:absolute}#at15s_brand{top:4px;right:4px}.at15s_brandx{right:20px!important}a#at15sptx{top:4px;right:4px;text-decoration:none;color:#4c4c4c;font-weight:700}#at15sptx:hover{text-decoration:underline}#at16_brand{top:5px;right:30px;cursor:default}#at_hover{padding:4px}#at_hover .at_item,#at_share .at_item{background:#fff!important;float:left!important;color:#4c4c4c!important}#at_share .at_item .at-icon-wrapper{margin-right:5px}#at_hover .at_bold{font-weight:700;color:#000!important}#at_hover .at_item{width:7pc!important;padding:2px 3px!important;margin:1px;text-decoration:none!important}#at_hover .at_item.athov,#at_hover .at_item:focus,#at_hover .at_item:hover{margin:0!important}#at_hover .at_item.athov,#at_hover .at_item:focus,#at_hover .at_item:hover,#at_share .at_item.athov,#at_share .at_item:hover{background:#f2f2f2!important;border:1px solid #e5e5e5;color:#000!important;text-decoration:none}.ipad #at_hover .at_item:focus{background:#fff!important;border:1px solid #fff}.at15t{display:block!important;height:1pc!important;line-height:1pc!important;padding-left:20px!important;background-position:0 0;text-align:left}.addthis_button,.at15t{cursor:pointer}.addthis_toolbox a.at300b,.addthis_toolbox a.at300m{width:auto}.addthis_toolbox a{margin-bottom:5px;line-height:initial}.addthis_toolbox.addthis_vertical_style{width:200px}.addthis_button_facebook_like .fb_iframe_widget{line-height:100%}.addthis_button_facebook_like iframe.fb_iframe_widget_lift{max-width:none}.addthis_toolbox a.addthis_button_counter,.addthis_toolbox a.addthis_button_facebook_like,.addthis_toolbox a.addthis_button_facebook_send,.addthis_toolbox a.addthis_button_facebook_share,.addthis_toolbox a.addthis_button_foursquare,.addthis_toolbox a.addthis_button_linkedin_counter,.addthis_toolbox a.addthis_button_pinterest_pinit,.addthis_toolbox a.addthis_button_tweet{display:inline-block}.addthis_toolbox span.addthis_follow_label{display:none}.addthis_toolbox.addthis_vertical_style span.addthis_follow_label{display:block;white-space:nowrap}.addthis_toolbox.addthis_vertical_style a{display:block}.addthis_toolbox.addthis_vertical_style.addthis_32x32_style a{line-height:2pc;height:2pc}.addthis_toolbox.addthis_vertical_style .at300bs{margin-right:4px;float:left}.addthis_toolbox.addthis_20x20_style span{line-height:20px}.addthis_toolbox.addthis_32x32_style span{line-height:2pc}.addthis_toolbox.addthis_pill_combo_style .addthis_button_compact .at15t_compact,.addthis_toolbox.addthis_pill_combo_style a{float:left}.addthis_toolbox.addthis_pill_combo_style a.addthis_button_tweet{margin-top:-2px}.addthis_toolbox.addthis_pill_combo_style .addthis_button_compact .at15t_compact{margin-right:4px}.addthis_default_style .addthis_separator{margin:0 5px;display:inline}div.atclear{clear:both}.addthis_default_style .addthis_separator,.addthis_default_style .at4-icon,.addthis_default_style .at300b,.addthis_default_style .at300bo,.addthis_default_style .at300bs,.addthis_default_style .at300m{float:left}.at300b img,.at300bo img{border:0}a.at300b .at4-icon,a.at300m .at4-icon{display:block}.addthis_default_style .at300b,.addthis_default_style .at300bo,.addthis_default_style .at300m{padding:0 2px}.at300b,.at300bo,.at300bs,.at300m{cursor:pointer}.addthis_button_facebook_like.at300b:hover,.addthis_button_facebook_like.at300bs:hover,.addthis_button_facebook_send.at300b:hover,.addthis_button_facebook_send.at300bs:hover{opacity:1}.addthis_20x20_style .at15t,.addthis_20x20_style .at300bs{overflow:hidden;display:block;height:20px!important;width:20px!important;line-height:20px!important}.addthis_32x32_style .at15t,.addthis_32x32_style .at300bs{overflow:hidden;display:block;height:2pc!important;width:2pc!important;line-height:2pc!important}.at300bs{overflow:hidden;display:block;background-position:0 0;height:1pc;width:1pc;line-height:1pc!important}.addthis_default_style .at15t_compact,.addthis_default_style .at15t_expanded{margin-right:4px}#at_share .at_item{width:123px!important;padding:4px;margin-right:2px;border:1px solid #fff}#at16p{background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAABtJREFUeNpiZGBgaGAgAjAxEAlGFVJHIUCAAQDcngCUgqGMqwAAAABJRU5ErkJggg==);z-index:10000001;position:absolute;top:50%;left:50%;width:300px;padding:10px;margin:0 auto;margin-top:-185px;margin-left:-155px;font-family:arial,helvetica,tahoma,verdana,sans-serif;font-size:9pt;color:#5e5e5e}#at_share{margin:0;padding:0}#at16pt{position:relative;background:#f2f2f2;height:13px;padding:5px 10px}#at16pt a,#at16pt h4{font-weight:700}#at16pt h4{display:inline;margin:0;padding:0;font-size:9pt;color:#4c4c4c;cursor:default}#at16pt a{position:absolute;top:5px;right:10px;color:#4c4c4c;text-decoration:none;padding:2px}#at15sptx:focus,#at16pt a:focus{outline:thin dotted}#at15s #at16pf a{top:1px}#_atssh{width:1px!important;height:1px!important;border:0!important}.atm{width:10pc!important;padding:0;margin:0;line-height:9pt;letter-spacing:normal;font-family:arial,helvetica,tahoma,verdana,sans-serif;font-size:9pt;color:#444;background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAABtJREFUeNpiZGBgaGAgAjAxEAlGFVJHIUCAAQDcngCUgqGMqwAAAABJRU5ErkJggg==);padding:4px}.atm-f{text-align:right;border-top:1px solid #ddd;padding:5px 8px}.atm-i{background:#fff;border:1px solid #d5d6d6;padding:0;margin:0;box-shadow:1px 1px 5px rgba(0,0,0,.15)}.atm-s{margin:0!important;padding:0!important}.atm-s a:focus{border:transparent;outline:0;transition:none}#at_hover.atm-s a,.atm-s a{display:block;text-decoration:none;padding:4px 10px;color:#235dab!important;font-weight:400;font-style:normal;transition:none}#at_hover.atm-s .at_bold{color:#235dab!important}#at_hover.atm-s a:hover,.atm-s a:hover{background:#2095f0;text-decoration:none;color:#fff!important}#at_hover.atm-s .at_bold{font-weight:700}#at_hover.atm-s a:hover .at_bold{color:#fff!important}.atm-s a .at-label{vertical-align:middle;margin-left:5px;direction:ltr}.at_PinItButton{display:block;width:40px;height:20px;padding:0;margin:0;background-image:url(//s7.addthis.com/static/t00/pinit00.png);background-repeat:no-repeat}.at_PinItButton:hover{background-position:0 -20px}.addthis_toolbox .addthis_button_pinterest_pinit{position:relative}.at-share-tbx-element .fb_iframe_widget span{vertical-align:baseline!important}#at16pf{height:auto;text-align:right;padding:4px 8px}.at-privacy-info{position:absolute;left:7px;bottom:7px;cursor:pointer;text-decoration:none;font-family:helvetica,arial,sans-serif;font-size:10px;line-height:9pt;letter-spacing:.2px;color:#666}.at-privacy-info:hover{color:#000}.body .wsb-social-share .wsb-social-share-button-vert{padding-top:0;padding-bottom:0}.body .wsb-social-share.addthis_counter_style .addthis_button_tweet.wsb-social-share-button{padding-top:40px}.body .wsb-social-share.addthis_counter_style .addthis_button_facebook_like.wsb-social-share-button{padding-top:21px}@media print{#at4-follow,#at4-share,#at4-thankyou,#at4-whatsnext,#at4m-mobile,#at15s,.at4,.at4-recommended{display:none!important}}@media screen and (max-width:400px){.at4win{width:100%}}@media screen and (max-height:700px) and (max-width:400px){.at4-thankyou-inner .at4-recommended-container{height:122px;overflow:hidden}.at4-thankyou-inner .at4-recommended .at4-recommended-item:first-child{border-bottom:1px solid #c5c5c5}}</style><style type="text/css">.at-branding-logo{font-family:helvetica,arial,sans-serif;text-decoration:none;font-size:10px;display:inline-block;margin:2px 0;letter-spacing:.2px}.at-branding-logo .at-branding-icon{background-image:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAMAAAC67D+PAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAAZQTFRF////+GlNUkcc1QAAAB1JREFUeNpiYIQDBjQmAwMmkwEM0JnY1WIxFyDAABGeAFEudiZsAAAAAElFTkSuQmCC")}.at-branding-logo .at-branding-icon,.at-branding-logo .at-privacy-icon{display:inline-block;height:10px;width:10px;margin-left:4px;margin-right:3px;margin-bottom:-1px;background-repeat:no-repeat}.at-branding-logo .at-privacy-icon{background-image:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAKCAMAAABR24SMAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAABhQTFRF8fr9ot/xXcfn2/P5AKva////////AKTWodjhjAAAAAd0Uk5T////////ABpLA0YAAAA6SURBVHjaJMzBDQAwCAJAQaj7b9xifV0kUKJ9ciWxlzWEWI5gMF65KUTv0VKkjVeTerqE/x7+9BVgAEXbAWI8QDcfAAAAAElFTkSuQmCC")}.at-branding-logo span{text-decoration:none}.at-branding-logo .at-branding-addthis,.at-branding-logo .at-branding-powered-by{color:#666}.at-branding-logo .at-branding-addthis:hover{color:#333}.at-cv-with-image .at-branding-addthis,.at-cv-with-image .at-branding-addthis:hover{color:#fff}a.at-branding-logo:visited{color:initial}.at-branding-info{display:inline-block;padding:0 5px;color:#666;border:1px solid #666;border-radius:50%;font-size:10px;line-height:9pt;opacity:.7;transition:all .3s ease;text-decoration:none}.at-branding-info span{border:0;clip:rect(0 0 0 0);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px}.at-branding-info:before{content:'i';font-family:Times New Roman}.at-branding-info:hover{color:#0780df;border-color:#0780df}</style><style id="service-icons-0"></style>
+<script type="text/javascript">
+  (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
+  (w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
+  e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
+  })(window,document,'script','//s.swiftypecdn.com/install/v2/st.js','_st');
+  
+  _st('install','F_pTME7mydky5kHVQaaa','2.0.0');
+</script>
+<script type="text/javascript">
+  window.onload = function() {
+    $("a[href*='dlsearch']").click(function(event) {
+      if (location.hash) {
+        event.preventDefault();
+
+        var initialHref = $(event.target).attr('href').replace('query=&', "").replace('query=', "");
+
+        var query = location.hash.substring(1).split("&")
+
+        if (query) {
+          query = query.find(function(e) { return e.indexOf("stq=") !== -1 })
+
+          if (query) {
+            query = query.substring(4);
+          }
+        }
+
+        query = initialHref + "&query=" + query;
+
+        window.location.href = query;
+      }
+    });
+  }
+</script>
+
+<script async="" src="./The Algorithm That Changed Quantum Machine Learning _ August 2019 _ Communications of the ACM_files/js"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-6995646-3');
+</script>
+<meta property="og:type" content="article"><meta property="og:url" content="https://cacm.acm.org/magazines/2019/8/238339-the-algorithm-that-changed-quantum-machine-learning/fulltext"><meta property="og:title" content="The Algorithm That Changed Quantum Machine Learning"><meta property="og:image" content="https://cacm.acm.org/system/assets/0003/5194/071919_IBM_The-Algorithm1.large.jpg?1563826383&amp;1563826383"><meta property="og:description" content="A college student discovered a classical computing algorithm that experts overlooked. It promises to change both classical and quantum machine learning.
+">
+<style type="text/css">cufon{text-indent:0!important;}@media screen,projection{cufon{display:inline!important;display:inline-block!important;position:relative!important;vertical-align:middle!important;font-size:1px!important;line-height:1px!important;}cufon cufontext{display:-moz-inline-box!important;display:inline-block!important;width:0!important;height:0!important;overflow:hidden!important;text-indent:-10000in!important;}cufon canvas{position:relative!important;}}@media print{cufon{padding:0!important;}cufon canvas{display:none!important;}}</style><link rel="stylesheet" type="text/css" href="./The Algorithm That Changed Quantum Machine Learning _ August 2019 _ Communications of the ACM_files/new_embed-20cee04df5c6e7e2687598f076a0147d.css"><style type="text/css">.st-install-F_pTME7mydky5kHVQaaa .st-ui-result .st-ui-type-heading { color:#0089d7 !important }
+.st-install-F_pTME7mydky5kHVQaaa .st-ui-result em {font-style:normal; font-weight:bold; background-color:#f6fcfe !important}</style></head>
+<body id="body-main" itemscope="" itemtype="http://schema.org/Article" data-gr-c-s-loaded="true">
+<div id="domain-info" data-domain="cacm.acm.org"></div>
+<div class="JumpLink" id="PageTop"></div>
+<div id="container">
+<div id="layout">
+<header class="topHeader">
+<a href="https://cacm.acm.org/" title="ACM" id="topLogo">ACM</a>
+<div id="instName"><img src="./The Algorithm That Changed Quantum Machine Learning _ August 2019 _ Communications of the ACM_files/acm_header.png" height="40" width="40" class="logo-mini" style="display: none;"></div>
+<a href="https://cacm.acm.org/login" title="Login" id="topSignIn">Sign In</a>
+<div id="topForm">
+<form action="https://cacm.acm.org/search" method="get">
+<div class="portaInput">
+<label for="searchInput" id="labelSearchInput" class="inField"></label>
+<input type="text" id="searchInput" class="st-default-search-input" placeholder="Search" name="q" autocomplete="off" autocorrect="off" autocapitalize="off">
+</div>
+<button name="search submit" type="submit" id="searchSubmit">Go</button>
+</form>
+</div>
+<div id="topBar">
+<ul>
+<li><a href="https://www.acm.org/" title="ACM.org">ACM.org</a></li>
+<li><a href="https://campus.acm.org/public/qj/brandingqj/cacm.cfm" target="_blank" title="Join ACM">Join ACM</a></li>
+<li><a href="https://cacm.acm.org/about-communications" title="About Communications">About Communications</a></li>
+<li><a href="https://cacm.acm.org/acm-resources" title="ACM Resources">ACM Resources</a></li>
+<li class="last-child"><a href="https://cacm.acm.org/alerts-and-feeds" title="Alerts &amp; Feeds">Alerts &amp; Feeds</a></li>
+<li class="last-child">
+<a href="https://www.facebook.com/Communications-of-the-ACM-521319564596131/" style="margin: 0;padding: 0;margin-right: 1px;margin-top: -2px;"><img src="./The Algorithm That Changed Quantum Machine Learning _ August 2019 _ Communications of the ACM_files/facebook.png" style="height: 18px;width: 18px;"></a>
+<a href="https://twitter.com/cacmmag" style="margin: 0;padding: 0;margin-top: -1px;margin-right: 4px;"><img src="./The Algorithm That Changed Quantum Machine Learning _ August 2019 _ Communications of the ACM_files/twitter.png" style="width: 16px;height: 16px;"></a>
+<a href="https://cacm.acm.org/alerts-and-feeds/rss-feeds" style="margin: 0;padding: 0;"><img src="./The Algorithm That Changed Quantum Machine Learning _ August 2019 _ Communications of the ACM_files/rss.png" style="width: 14px;height: 14px;"></a>
+</li>
+</ul>
+</div>
+<hgroup>
+<h1><a href="https://cacm.acm.org/" title="Communications of the ACM">Communications of the ACM</a></h1>
+</hgroup>
+<nav>
+<ul>
+<li class="first-child"><a href="https://cacm.acm.org/" class="menuText itemHome">Home</a></li>
+<li>
+<div class="portaDropdown">
+<a class="withMenu menuText itemCurrent" href="https://cacm.acm.org/magazines/2019/12">Current Issue</a>
+<div class="menuLinks currenIssueDropdown">
+<a class="menuCover" href="https://cacm.acm.org/magazines/2019/12">
+<img src="./The Algorithm That Changed Quantum Machine Learning _ August 2019 _ Communications of the ACM_files/cover_full.jpg" width="145" height="192" alt="Latest issue">
+</a>
+<span class="dropDownIssueTitle">Current Issue: December 2019</span>
+<a href="https://cacm.acm.org/magazines/2019/12/241054-the-rise-of-serverless-computing">The Rise of Serverless Computing</a>
+<a href="https://cacm.acm.org/magazines/2019/12/241053-hack-for-hire">Hack for Hire</a>
+<a href="https://cacm.acm.org/magazines/2019/12/241055-automated-program-repair">Automated Program Repair</a>
+<a class="lastLink" href="https://cacm.acm.org/magazines/2019/12">VIEW TABLE OF CONTENTS</a>
+</div>
+</div>
+</li>
+<li>
+<div class="portaDropdown">
+<a href="https://cacm.acm.org/news" class="withMenu menuText itemNews">News</a>
+<div class="menuLinks newsDropdown">
+<a href="https://cacm.acm.org/news" class="lastLink">Latest News</a>
+<a href="https://cacm.acm.org/news/archive" class="lastLink">News Archive</a>
+</div>
+</div>
+</li>
+<li>
+<div class="portaDropdown">
+<a href="https://cacm.acm.org/blogs/about-the-blogs" class="withMenu menuText itemBlogs">Blogs</a>
+<div class="menuLinks blogsDropdown">
+<a href="https://cacm.acm.org/blogs/about-the-blogs">About the Blogs</a>
+<a href="https://cacm.acm.org/blogs/blog-cacm">BLOG@CACM</a>
+<a href="https://cacm.acm.org/blogs/blogroll">Blogroll</a>
+<a href="https://cacm.acm.org/blogs/archive" class="lastLink">Blogs Archive</a>
+</div>
+</div>
+</li>
+<li>
+<div class="portaDropdown">
+<a href="https://cacm.acm.org/opinion" class="withMenu menuText itemOpinion">Opinion</a>
+<div class="menuLinks opinionDropdown">
+<a href="https://cacm.acm.org/opinion/articles">Articles</a>
+<a href="https://cacm.acm.org/opinion/interviews">Interviews</a>
+<a href="https://cacm.acm.org/opinion/archive" class="lastLink">Opinion Archive</a>
+</div>
+</div>
+</li>
+<li>
+<div class="portaDropdown">
+<a href="https://cacm.acm.org/research" class="withMenu menuText itemResearch">Research</a>
+<div class="menuLinks researchDropdown">
+<a href="https://cacm.acm.org/research">Latest Research</a>
+<a href="https://cacm.acm.org/research/archive" class="lastLink">Research Archive</a>
+</div>
+</div>
+</li>
+<li>
+<div class="portaDropdown">
+<a href="https://cacm.acm.org/practice" class="withMenu menuText itemPractice">Practice</a>
+<div class="menuLinks practiceDropdown">
+<a href="https://cacm.acm.org/practice">Latest Practice</a>
+<a href="https://cacm.acm.org/practice/archive" class="lastLink">Practice Archive</a>
+</div>
+</div>
+</li>
+<li>
+<div id="careersNav" class="portaDropdown">
+<a href="https://cacm.acm.org/careers" class="withMenu menuText itemOpinion">Careers</a>
+<div class="menuLinks opinionDropdown">
+<ul>
+<li><a href="http://jobs.acm.org/jobs/search/results?rows=15&amp;radius=0&amp;view=List_Detail&amp;sort=score+desc" target="_blank">Search for Jobs</a></li>
+<li><a href="http://jobs.acm.org/jobs/resumes/create" target="_blank">Post a Resume</a></li>
+<li><a href="http://jobs.acm.org/jobs/products" target="_blank">Post A Job</a></li>
+<li><a href="https://www.acm.org/publications/advertising" target="_blank">Advertise with Us</a></li>
+<li class="lastLink"><a href="mailto:careers@acm.org">Contact Us</a></li>
+</ul>
+</div>
+</div>
+</li>
+<li>
+<div class="portaDropdown">
+<a href="https://cacm.acm.org/magazines" class="withMenu menuText itemPrevious on">Archive</a>
+<div class="menuLinks previousDropdown">
+<span class="previousIssueTitle">The magazine archive includes every article published in <i>Communications of the ACM</i> for over the past 50 years.</span>
+<div class="issue">
+<a href="https://cacm.acm.org/magazines/2019/12">
+December 2019 (Vol. 62, No. 12)
+</a>
+</div>
+<div class="issue">
+<a href="https://cacm.acm.org/magazines/2019/11">
+November 2019 (Vol. 62, No. 11)
+</a>
+</div>
+<div class="issue">
+<a href="https://cacm.acm.org/magazines/2019/10">
+October 2019 (Vol. 62, No. 10)
+</a>
+</div>
+<a href="https://cacm.acm.org/magazines" class="lastLink">VIEW MORE ISSUES</a>
+</div>
+</div>
+</li>
+<li>
+<a href="https://cacm.acm.org/videos" class="menuText itemVideos">Videos</a>
+</li>
+</ul>
+</nav>
+</header>
+<section>
+<script type="text/javascript" src="./The Algorithm That Changed Quantum Machine Learning _ August 2019 _ Communications of the ACM_files/addthis_widget.js"></script>
+<div class="breadcrum">
+<a href="https://cacm.acm.org/">Home</a><span>/</span><a href="https://cacm.acm.org/magazines/decade">Magazine Archive</a><span>/</span><a href="https://cacm.acm.org/magazines/2019/8">August 2019 (Vol. 62, No. 8)</a><span>/</span><a href="https://cacm.acm.org/magazines/2019/8/238339-the-algorithm-that-changed-quantum-machine-learning">The Algorithm That Changed Quantum Machine Learning</a><span>/</span>Full Text
+</div>
+<div class="col0 floatLeft firstCol">
+<span class="label">News</span>
+<h1>The Algorithm That Changed Quantum Machine Learning</h1>
+<h6 class="subheader"></h6>
+</div>
+<hr class="dotted">
+<div id="articleFullText" class="col1 floatLeft firstCol">
+<span class="byline">
+By Samuel Greengard
+<br>
+Communications of the ACM,
+August 2019,
+Vol. 62 No. 8, Pages 15-17<br>
+10.1145/3339458<br>
+<a href="https://cacm.acm.org/magazines/2019/8/238339-the-algorithm-that-changed-quantum-machine-learning/fulltext#comments">Comments</a>
+</span>
+
+<div class="fav_bar">
+<style>
+    .fav_hacker_news {
+      background:url('https://img.icons8.com/color/48/000000/hacker-news.png') no-repeat center #FFF;
+      background-size: 21.5px;
+    }
+    .fav_hacker_news:hover {
+      background:url('https://img.icons8.com/color/48/000000/hacker-news.png') no-repeat center #e6e9ea;
+      background-size: 21.5px;
+    }
+    .fav_bar a.fav_reddit {
+      background-size: 22px;
+      background:url('https://cacm.acm.org/images/icons/reddit.gif') no-repeat center #FFF;
+    }
+    .fav_bar a.fav_reddit:hover {
+      background-color: #e6e9ea;
+    }
+    .fav_bar a.fav_facebook {
+      background-size: 22px;
+      background:url('https://cacm.acm.org/images/icons/facebook.gif') no-repeat center #FFF;
+    }
+    .fav_bar a.fav_facebook:hover {
+      background-color: #e6e9ea;
+      background:url('https://cacm.acm.org/images/icons/facebook.gif') no-repeat center #e6e9ea;
+    }
+  </style>
+<span>View as:</span>
+<a href="https://cacm.acm.org/magazines/2019/8/238339-the-algorithm-that-changed-quantum-machine-learning/fulltext#" onclick="javascript:window.print();" class="fav_print" original-title="Print">Print</a>
+<a href="https://cacm.acm.org/about-communications/mobile-apps/" class="mobile-apps" original-title="MOBILE APPS">Mobile App</a>
+<a href="https://dl.acm.org/citation.cfm?id=3351434.3339458&amp;coll=portal&amp;dl=ACM" class="fav_acm_digital" target="_blank" original-title="View in ACM Digital Library">ACM Digital Library</a>
+<a href="https://cacm.acm.org/magazines/2019/8/238339-the-algorithm-that-changed-quantum-machine-learning/pdf" class="fav_pdf" rel="nofollow" target="_blank" original-title="View as PDF">Full Text (PDF)</a>
+<a href="https://dl.acm.org/ft_gateway.cfm?id=3339458&amp;ftid=2074816&amp;dwn=1" class="fav_de" target="_blank" original-title="View in Digital Edition">In the Digital Edition</a>
+<span>Share:</span>
+<a href="javascript:void(0);" class="fav_email" id="sendByEmail" original-title="Send by email">Send by email</a>
+<a href="javascript:void(0);" class="fav_reddit" onclick="addthis_sendto(&#39;reddit&#39;);" original-title="Share on reddit">Share on reddit</a>
+<a href="javascript:void(0);" class="fav_su" onclick="addthis_sendto(&#39;stumbleupon&#39;);" original-title="Share on StumbleUpon">Share on StumbleUpon</a>
+<a href="https://news.ycombinator.com/" class="fav_hacker_news" original-title="Share on Hacker News">Share on Hacker News</a>
+<a href="javascript:void(0);" class="fav_twitter" onclick="addthis_sendto(&#39;twitter&#39;);" original-title="Share on Twitter">Share on Tweeter</a>
+<a href="javascript:void(0);" class="fav_facebook" onclick="addthis_sendto(&#39;facebook&#39;);" original-title="Share on Facebook">Share on Facebook</a>
+<div class="addthis_toolbox ">
+<a href="https://www.addthis.com/bookmark.php?v=250&amp;pubid=xa-4dcbeff2515fc93c" class="addthis_button_compact fav_more no_border at300m" original-title=""><span class="at-icon-wrapper" style="background-color: rgb(255, 101, 80); line-height: 16px; height: 16px; width: 16px;"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32" version="1.1" role="img" aria-labelledby="at-svg-addthis-1" title="More" alt="More" style="width: 16px; height: 16px;" class="at-icon at-icon-addthis"><title id="at-svg-addthis-1">AddThis</title><g><path d="M18 14V8h-4v6H8v4h6v6h4v-6h6v-4h-6z" fill-rule="evenodd"></path></g></svg></span>Share</a>
+<div class="atclear"></div></div>
+<script type="text/javascript" src="./The Algorithm That Changed Quantum Machine Learning _ August 2019 _ Communications of the ACM_files/addthis_widget.js"></script>
+</div>
+
+<div class="clearer"></div>
+<div class="imageWithCaptionLeft" id="asset-35194">
+<figure>
+<img alt="qubit patterns, illustration" src="./The Algorithm That Changed Quantum Machine Learning _ August 2019 _ Communications of the ACM_files/071919_IBM_The-Algorithm1.large.jpg" title="qubit patterns, illustration">
+<figcaption>
+<p class="credit">Credit: IBM</p>
+</figcaption>
+</figure>
+</div>
+
+<p><a name="body-1"></a></p>
+<p>It's not every day that an 18-year-old college student catches the eye of the computing world, but when Ewin Tang took aim at recommendation algorithms similar to those commonly used by the likes of Amazon and Netflix, the University of Texas at Austin mathematics and computer science undergraduate blew up an established belief: that classical computers cannot perform these types of calculations at the speed of quantum computers.</p>
+<p>In a July 2018 paper, which Tang wrote for a senior honors thesis under the supervision of computer science professor Scott Aaronson, a leading researcher in quantum computing algorithms, she discovered an algorithm that showed classical computers can indeed tackle predictive recommendations at a speed previously thought possible only with quantum computers. "I actually set out to demonstrate that quantum machine learning algorithms are faster," she explains. "But, along the way, I realized this was not the case."</p>
+<p><a href="./The Algorithm That Changed Quantum Machine Learning _ August 2019 _ Communications of the ACM_files/uf1.jpg" onclick="window.open(this.href, &#39;&#39;, &#39;resizable=yes,status=no,location=no,toolbar=no,menubar=no,fullscreen=no,scrollbars=no,dependent=no,width=1022,height=594&#39;); return false;"><img alt="uf1.jpg" height="241" src="./The Algorithm That Changed Quantum Machine Learning _ August 2019 _ Communications of the ACM_files/uf1.jpg" width="415"></a><br>
+<strong>Figure. Ewin Tang set out to show that quantum machine learning algorithms are faster than classical algorithms, "but ... I realized this was not the case."</strong></p>
+<p>The ripples of Tang's research have reached far and wide. Not surprisingly, the press fawned over her discovery, in some cases implying that it had made quantum computing advances obsolete. Mathematicians and computer scientists in the machine learning field took notice, too. Some acknowledged that Tang found a blind spot in previous research—an algorithm that had somehow escaped the top minds in the field. Her discovery has forced computer scientists to rethink basic assumptions about quantum machine learning, at a time when quantum computing is advancing rapidly.</p>
+<p>Make no mistake, Tang's research is remarkable, and it will have a significant impact on both classical and quantum machine learning. "What Ewin's paper demonstrates is that the properties exploited by the quantum algorithm can also be used by a classical algorithm," explains James R. Lee, a professor of computer science at the University of Washington and Tang's Ph.D. advisor. "Ultimately, this offers a new framework for designing conventional algorithms on classical computers."</p>
+
+<p><a href="https://cacm.acm.org/magazines/2019/8/238339-the-algorithm-that-changed-quantum-machine-learning/fulltext#PageTop">Back to Top</a></p>
+
+<p><a name="body-2"></a></p>
+<h3>A New Formula</h3>
+<p>The algorithm in question is one that computer scientists Iordanis Kerenidis and Anupam Prakash introduced in 2016. Their quantum computing algorithm solved theoretical recommendation problems exponentially faster than any previously known classical algorithm. It achieved a speed increase by eliminating the need to access all components in a decision-based matrix; instead, the algorithm accesses only those components most relevant for a specific person. In the case of a movie recommendation, for example, this might mean a proclivity toward French films, or a desire to watch action films or romantic comedies.</p>
+<p>At the time, "The algorithm delivered an exponential improvement compared to the best-known classical algorithms," says Kerenidis, a senior researcher in the Algorithms and Complexity Group at Université Paris Diderot. Essentially, the pair demonstrated that a quantum computer could process recommendation challenges exponentially faster than any known algorithm, though it didn't eliminate the possibility of an equally fast classical algorithm. When, in 2017, Tang selected the topic for a senior honors thesis in a class Aronson taught about quantum information, she simply hoped to confirm such an outcome. "We thought that the analysis would back the validity of existing research," she says.</p>
+<p>A famous example of this approach is Simon's Problem, which was created by computer scientist David Simon in 1994. It demonstrated, at least on a theoretical level, that this computational problem can be solved with exponentially fewer queries on a quantum computer. It served as the foundation for Shor's Factoring Algorithm, which appeared shortly thereafter and remains a highly significant contribution to quantum theory. Peter Shor delivered further evidence that Simon's concept was correct by developing a quantum algorithm for integer factorization. The algorithm finds the prime factors of an integer N in time polynomial in the number of digits of N.</p>
+<hr>
+<blockquote>
+<p><em>Kerenidis and Prakash's quantum computing algorithm solved theoretical recommendation problems faster than any previously known classical algorithm.</em></p>
+</blockquote>
+<hr>
+<p>Yet as Tang studied the algorithm further, things began to get a lot more interesting. For months, she worked to rule out the possibility that a classical algorithm could address the Kerendis-Prakash problem. Aaronson refers to this as phase 1. "At the time, nothing about that failure seemed odd or anomalous to us: most likely, we thought, there was indeed no classical algorithm, but ruling it out was just a very hard problem," he says. "At some point, though, Ewin had the key insight about why an efficient classical algorithm should exist after all and set out to develop it." Aaronson refers to this stage as phase 2.</p>
+<p>All along, the algorithm Kerenidis and Prakash had discovered and the validity of their calculations were never in doubt. What eventually became apparent was that there was more to the story. "It appeared that there was something other people had missed," she states.</p>
+<p>During the early stages of the project, Aaronson worked with Tang to further explore the mathematical underpinnings—despite the fact that he was on sabbatical during most of this period. During the latter stages, Tang worked almost entirely on her own. Finally, "We went over it and over the research because we wanted to be absolutely sure that it was sound before it was published," Aaronson explains.</p>
+<p>Soon after graduating, Aaronson arranged for Tang to appear at a quantum computing workshop at the Simons Institute for the Theory of Computing, part of the University of California, Berkeley (UC Berkeley). In attendance were a number of luminaries from the quantum machine learning field, including Ronald de Wolf from the University of Amsterdam, Mario Szegedy from Rutgers University, and Iordanis Kerenidis who, with Prakash, a graduate student at UC Berkeley, had written the original quantum machine learning recommendations paper.</p>
+<p>At the symposium, the luminaries watched and listened closely for about four hours, spread across two days. They asked questions and probed, but none of them could find anything wrong with Tang's research and calculations. Aaronson encouraged Tang to publish the paper, <em>A Quantum-inspired Classical Algorithm for Recommendation Systems.</em> It appeared in July 2018 at the <em>Electronic Colloquium on Computational Complexity</em> (ECCC) and it was later accepted to the ACM Symposium on Theory of Computing (STOC 2019). Says Kerenidis, "It is an impressive piece of theoretical work. It is very interesting to see that a quantum algorithm can inspire new classical algorithms."</p>
+
+<p><a href="https://cacm.acm.org/magazines/2019/8/238339-the-algorithm-that-changed-quantum-machine-learning/fulltext#PageTop">Back to Top</a></p>
+
+<p><a name="body-3"></a></p>
+<h3>Finding the Proof</h3>
+<p>Tang's research focused on a specific piece of the machine learning puzzle. Recommendation systems suggest products or choices based on data about user preferences. The algorithm typically revolves around a model that is based on a specific task: completing an <em>m x n</em> matrix of small rank <em>k.</em> However, Tang presented a classical algorithm that produces a recommendation in O(poly(<em>k</em>) polylog(<em>m, n</em>)) time. This represents "an exponential improvement on previous algorithms that run in time linear in <em>m</em> and <em>n</em>," she noted in the paper.</p>
+<p>In plain terms, Tang achieved a speedup in classical computing using the same general approach Kerenidis and Prakash tapped. She directed the algorithm to narrow the matrix and focus only on the most important criteria to generate a useful recommendation.</p>
+<p>The belief that quantum computing produces exponential improvements over classical computing algorithms for recommendation systems had been shattered. "The best we can hope for is a polynomial improvement, but in practice this can still be of great value," Kerenidis explains. Lee says that it's important to view the findings in context, and not allow the short-term ramifications to distort the long-term uses and benefits of quantum machine learning. "There are two important components to the research," he says. "First, it's an exciting direction in algorithms research because it offers a new approach to the design of classical algorithms. Second, it's an important step in mapping out the types of problems where we could expect quantum computers to be exponentially more efficient than classical computers."</p>
+<p>In fact, the recommendation problem is only a tiny sliver of the quantum computing universe. Says Bob Sutor, vice president for IBM Q Strategy and Ecosystem at IBM Research (which unveiled the first commercially available quantum computer in January 2019): "While it might be fun to set up some sort of competition between classical and quantum algorithm creators, the truth is that they work with and inspire each other... there is a real separation in some cases between classical and quantum."</p>
+
+<p><a href="https://cacm.acm.org/magazines/2019/8/238339-the-algorithm-that-changed-quantum-machine-learning/fulltext#PageTop">Back to Top</a></p>
+
+<p><a name="body-4"></a></p>
+<h3>By the Numbers</h3>
+<p>Beyond the obvious appeal of an 18-year-old deflating the quantum machine learning balloon lies a basic fact. "It would be very shortsighted to view this research as any sort of setback for quantum computing," Lee points out. "This is essentially how scientific research works and, over the long run, this research helps us better understand how and where to use classical computing methods and quantum computing methods. This doesn't fundamentally change the viability of quantum computing. It hasn't made the field any less promising."</p>
+<p>Aaronson concurs. "Ewin's break-through rules out the hope of an exponential quantum speedup for certain types of machine learning problems. But there are many other applications of quantum computers that are not affected by it—including breaking cryptographic codes, getting modest speedups for optimization problems, and probably most important of all, simulating quantum physics and chemistry themselves."</p>
+<p>Amid all the claims and counter-claims, it is important to keep a few things in mind. There is strong evidence that quantum computing can significantly accelerate certain computations, but there is no definitive proof of such. The only known provable separation theorem between quantum and classical is sqrt(<em>n</em>) vs. <em>n.</em> Proofs of stronger separation between classical and quantum are relative to an oracle.</p>
+<p>There is also a long way to go before quantum computing becomes a reality. The IBM Q has only 20 qubits, meaning that at this point, it is more of a demonstration machine than a viable quantum computing device. Finally, whether quantum or classical computing devices are used, machine learning requires very large input sets.</p>
+<p>Tang is taking things in stride. She is now pursuing her doctorate in theoretical computer science from the University of Washington, where she continues to explore quantum and classical algorithms. She has since collaborated on a second academic paper focusing on classical sub-linear-time algorithms that are designed to solve low-rank linear systems of equations. And she finds comments from a handful of detractors, upset that she chose to focus on a problem that helps companies make money, "amusing."</p>
+<p>Concludes Tang, "At this point, it's not clear whether a broader group of quantum algorithms or techniques can be dequantized and applied to make classical algorithms faster."</p>
+<p><img alt="*" src="./The Algorithm That Changed Quantum Machine Learning _ August 2019 _ Communications of the ACM_files/bullet.gif">&nbsp;<strong>Further Reading</strong></p>
+<p><em>Tang, E.</em><br>
+<strong>A Quantum-inspired Classical Algorithm for Recommendation Systems, <em>Electronic Colloquium on Computational Complexity</em> (ECCC), July 2018. <a href="https://arxiv.org/abs/1807.04271">https://arxiv.org/abs/1807.04271</a></strong></p>
+<p><em>Kerenidis, I., and Prakash, A.</em><br>
+<strong>Quantum Recommendation Systems, September 2016. <a href="https://arxiv.org/abs/1603.08675">https://arxiv.org/abs/1603.08675</a></strong></p>
+<p><em>Aaronson, S.</em><br>
+<strong>Quantum Computing Since Democritus, Cambridge University Press. 2013. <a href="https://www.scottaaronson.com/democritus/">https://www.scottaaronson.com/democritus/</a></strong></p>
+<p><em>Ciliberto, C., Herbster, M., Ialongo, A.D., Pontil, M., Rocchetto, A., Severini, S., and Wossnig, L.</em><br>
+<strong>Quantum Machine Learning: a Classical Perspective, <em>Quantum Physics</em>, Volume 474, Issue 2209, page 20170551. January 1, 2018. <a href="https://royalsocietypublishing.org/doi/full/10.1098/rspa.2017.0551">https://royalsocietypublishing.org/doi/full/10.1098/rspa.2017.0551</a></strong></p>
+
+<p><a href="https://cacm.acm.org/magazines/2019/8/238339-the-algorithm-that-changed-quantum-machine-learning/fulltext#PageTop">Back to Top</a></p>
+
+<div id="article-authorinfo"><a name="authorinfo"></a>
+<h3>Author</h3>
+<p><strong>Samuel Greengard</strong> is an author and journalist based in West Linn, OR, USA.</p>
+</div>
+
+<div id="article-permission">
+<hr><a name="permission"></a>
+<p><strong>©2019 ACM&nbsp;&nbsp;0001-0782/19/08</strong></p>
+<p>Permission to make digital or hard copies of part or all of this work for personal or classroom use is granted without fee provided that copies are not made or distributed for profit or commercial advantage and that copies bear this notice and full citation on the first page. Copyright for components of this work owned by others than ACM must be honored. Abstracting with credit is permitted. To copy otherwise, to republish, to post on servers, or to redistribute to lists, requires prior specific permission and/or fee. Request permission to publish from <a href="http://delivery.acm.org/10.1145/3340000/3339458/mailto:permissions@acm.org">permissions@acm.org</a> or fax (212) 869-0481.</p>
+</div>
+
+<p>The Digital Library is published by the Association for Computing Machinery. Copyright&nbsp;©&nbsp;2019 ACM, Inc.</p>
+
+<div class="clearer"></div>
+<hr class="thick">
+<a name="comments"></a>
+<div id="ArticleComments">
+<span id="CommentHeader">&nbsp;</span>
+</div>
+<p class="view-all">
+No entries found
+</p>
+
+</div>
+<div class="col3 floatLeft lastCol">
+<div class="signInWidget widget">
+<span class="signInTitle">Sign In <span class="noTransform">for Full Access</span></span>
+<form action="https://cacm.acm.org/login" method="post">
+<div class="portaInputSignIn">
+<label for="inputUser" class="inField">User Name</label>
+<input name="current_member[user]" type="text" id="inputUser">
+</div>
+<div class="portaInputSignIn">
+<label for="inputPassword" class="inField">Password</label>
+<input type="password" name="current_member[passwd]" id="inputPassword">
+</div>
+<a href="https://cacm.acm.org/accounts/forgot-password" class="subText">» Forgot Password?</a>
+<a href="https://cacm.acm.org/accounts/new" class="subText"><strong>» Create an ACM Web Account</strong></a>
+<button type="submit" class="submitSignIn">Sign In</button>
+</form>
+</div>
+<div id="article-contents-widget" class="widget contentsWidget">
+<h6 class="loud">Article Contents:</h6>
+<li class="miniWidgetItem"><a href="https://cacm.acm.org/magazines/2019/8/238339-the-algorithm-that-changed-quantum-machine-learning/fulltext#body-1">Introduction</a></li> <li class="miniWidgetItem"><a href="https://cacm.acm.org/magazines/2019/8/238339-the-algorithm-that-changed-quantum-machine-learning/fulltext#body-2">A New Formula</a></li> <li class="miniWidgetItem"><a href="https://cacm.acm.org/magazines/2019/8/238339-the-algorithm-that-changed-quantum-machine-learning/fulltext#body-3">Finding the Proof</a></li> <li class="miniWidgetItem"><a href="https://cacm.acm.org/magazines/2019/8/238339-the-algorithm-that-changed-quantum-machine-learning/fulltext#body-4">By the Numbers</a></li> <li class="miniWidgetItem"><a href="https://cacm.acm.org/magazines/2019/8/238339-the-algorithm-that-changed-quantum-machine-learning/fulltext#authorinfo">Author</a></li>
+</div>
+<div id="SideColumn">
+
+<div id="related-news-opinion-widget" class="blueWidget widget noBottom">
+<span class="widgetName">More News &amp; opinions</span>
+<a class="singleNews firstNews" href="https://cacm.acm.org/news/240858-wpi-researchers-discover-vulnerabilities-affecting-billions-of-computer-chips">
+</a><h5><a class="singleNews firstNews" href="https://cacm.acm.org/news/240858-wpi-researchers-discover-vulnerabilities-affecting-billions-of-computer-chips">
+</a><a href="https://cacm.acm.org/news/240858-wpi-researchers-discover-vulnerabilities-affecting-billions-of-computer-chips">WPI Researchers Discover Vulnerabilities Affecting Billions of Computer Chips</a>
+</h5>
+<span class="dateNews">Worcester Polytechnic Institute</span>
+
+<a class="singleNews" href="https://cacm.acm.org/opinion/articles/238562-ai-researchers-need-to-stop-hiding-the-climate-toll-of-their-work">
+</a><h5><a class="singleNews" href="https://cacm.acm.org/opinion/articles/238562-ai-researchers-need-to-stop-hiding-the-climate-toll-of-their-work">
+</a><a href="https://cacm.acm.org/opinion/articles/238562-ai-researchers-need-to-stop-hiding-the-climate-toll-of-their-work">AI Researchers Need to Stop Hiding the Climate Toll of Their Work</a>
+</h5>
+<span class="dateNews">Technology Review</span>
+
+<a class="singleNews" href="https://cacm.acm.org/blogs/blog-cacm/240615-leonardo-da-vincis-robot-lion">
+</a><h5><a class="singleNews" href="https://cacm.acm.org/blogs/blog-cacm/240615-leonardo-da-vincis-robot-lion">
+</a><a href="https://cacm.acm.org/blogs/blog-cacm/240615-leonardo-da-vincis-robot-lion">Leonardo da Vinci's Robot Lion</a>
+</h5>
+<span class="dateNews">Herbert Bruderer</span>
+
+</div>
+<div class="widget resourcesWidget" properties="">
+<div class="widgetBigTitle">
+<span class="bigTitle">ACM Resources</span>
+</div>
+<div class="singleBest">
+<h5><a href="https://pd.acm.org/ek_courses.cfm?crs=17121" target="_blank">SONET<span class="iconNewPage">&nbsp;&nbsp;&nbsp;&nbsp;</span></a></h5>
+<span class="dateNews">Courses</span>
+</div>
+</div>
+
+</div>
+</div>
+<a class=" hidden video-link" href="https://cacm.acm.org/magazines/2019/8/238339-the-algorithm-that-changed-quantum-machine-learning/fulltext"></a>
+</section>
+<button class="to-top" style="display: inline-block;"></button>
+<footer>
+<nav>
+<ul>
+<li class="first-child"><a href="https://cacm.acm.org/about-communications/author-center" title="For Authors">For Authors</a></li>
+<li><a href="http://www.acm-media.org/" title="For Advertisers" target="_blank">For Advertisers <img src="./The Algorithm That Changed Quantum Machine Learning _ August 2019 _ Communications of the ACM_files/new_page.png" alt="For Advertisers"></a></li>
+<li><a href="https://cacm.acm.org/privacy" title="Privacy Policy">Privacy Policy</a></li>
+<li><a href="https://cacm.acm.org/help" title="Help">Help</a></li>
+<li><a href="https://cacm.acm.org/about-communications/contact-us" title="Contact Us">Contact Us</a></li>
+<li><a class="toggle-mobile" href="https://m-cacm.acm.org/magazines/2019/8/238339-the-algorithm-that-changed-quantum-machine-learning/fulltext?mobile=true" data-domain="cacm.acm.org">Mobile Site</a></li>
+</ul>
+</nav>
+<span id="footerText">Copyright © 2019 by the ACM. All rights reserved.</span>
+</footer>
+</div>
+</div>
+<script src="./The Algorithm That Changed Quantum Machine Learning _ August 2019 _ Communications of the ACM_files/jquery.min.js"></script>
+<script src="./The Algorithm That Changed Quantum Machine Learning _ August 2019 _ Communications of the ACM_files/jquery.jplayer.js"></script>
+<!--[if lte IE 6]><script type="text/javascript" src="/javascripts/iepngfix_tilebg.js"></script><![endif]-->
+<script>!window.jQuery && document.write('<script src="/javascripts/jquery/jquery.min.js"><\/script>')</script>
+<script src="./The Algorithm That Changed Quantum Machine Learning _ August 2019 _ Communications of the ACM_files/jquery.infieldlabel.min.js"></script>
+<script src="./The Algorithm That Changed Quantum Machine Learning _ August 2019 _ Communications of the ACM_files/cufon.js"></script>
+<script src="./The Algorithm That Changed Quantum Machine Learning _ August 2019 _ Communications of the ACM_files/proxima_400.font.js"></script>
+<script src="./The Algorithm That Changed Quantum Machine Learning _ August 2019 _ Communications of the ACM_files/jquery.tipsy.js"></script>
+<script src="./The Algorithm That Changed Quantum Machine Learning _ August 2019 _ Communications of the ACM_files/jquery.colorbox-min.js"></script>
+<script src="./The Algorithm That Changed Quantum Machine Learning _ August 2019 _ Communications of the ACM_files/application.js"></script>
+
+<script async="" src="./The Algorithm That Changed Quantum Machine Learning _ August 2019 _ Communications of the ACM_files/js"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-6995646-3');
+</script>
+
+
+<div id="cboxOverlay" style="display: none;"></div><div id="colorbox" class="" style="display: none; padding-bottom: 20px; padding-right: 0px;"><div id="cboxWrapper"><div><div id="cboxTopLeft" style="float: left;"></div><div id="cboxTopCenter" style="float: left;"></div><div id="cboxTopRight" style="float: left;"></div></div><div style="clear: left;"><div id="cboxMiddleLeft" style="float: left;"></div><div id="cboxContent" style="float: left;"><div id="cboxLoadedContent" style="width: 0px; height: 0px; overflow: hidden; float: left;"></div><div id="cboxLoadingOverlay" style="float: left;"></div><div id="cboxLoadingGraphic" style="float: left;"></div><div id="cboxTitle" style="float: left;"></div><div id="cboxCurrent" style="float: left;"></div><div id="cboxNext" style="float: left;"></div><div id="cboxPrevious" style="float: left;"></div><div id="cboxSlideshow" style="float: left;"></div><div id="cboxClose" style="float: left;"></div></div><div id="cboxMiddleRight" style="float: left;"></div></div><div style="clear: left;"><div id="cboxBottomLeft" style="float: left;"></div><div id="cboxBottomCenter" style="float: left;"></div><div id="cboxBottomRight" style="float: left;"></div></div></div><div style="position: absolute; width: 9999px; visibility: hidden; display: none;"></div></div><div class="st-injected-content-generated st-install-F_pTME7mydky5kHVQaaa" data-st-install-key="F_pTME7mydky5kHVQaaa" id="st-injected-content"><div class="st-default-autocomplete" data-st-target-element=".st-default-search-input" style="display: none;">
+  <div class="st-autocomplete-results st-ui-autocomplete"><div class="st-query-present" style="display: none;"></div></div>
+</div>
+</div><div class="st-injected-content-generated st-install-F_pTME7mydky5kHVQaaa __st-search-container" data-st-install-key="F_pTME7mydky5kHVQaaa">
+<div class="st-ui-embed " style="">
+  <!-- Swiftype input and results overlay -->
+  <div class="st-ui-container st-ui-injected-container   st-ui-injected-on-page-container">
+    <!-- HEADER -->
+    <div class="st-ui-container-header_bar st-position-container">
+    </div>
+
+    <!-- LEFT SIDEBAR -->
+    <div class="st-ui-container-left_sidebar st-position-container">
+      <div class="st-ui-injected-search-controls">
+      </div>
+    </div>
+
+    <!-- RIGHT SIDEBAR -->
+    <div class="st-ui-container-right_sidebar st-position-container">
+      <div class="st-ui-injected-container-right_sidebar">
+        <div class="st-ui-injected-search-controls">
+        </div>
+      </div>
+    </div>
+
+    <!-- PRIMARY CONTENT -->
+    <div class="st-ui-container-primary_content st-position-container">
+        <div class="st-ui-injected-search-summary st-search-summary"></div>
+        <div class="st-ui-injected-content st-search-results"><div class="st-query-present" style="display: none;"></div></div>
+
+      <section class="st-ui-no-results st-search-suggestions"><div class="st-query-not-present">
+      </div></section>
+    </div>
+
+
+
+    <!-- FOOTER -->
+    <div class="st-ui-container-footer_bar st-position-container">
+      <section class="st-ui-footer">
+        <span class="st-ui-pagination st-search-pagination"></span>
+      </section>
+    </div>
+  </div>
+</div>
+</div></body></html>
